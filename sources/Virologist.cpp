@@ -1,10 +1,10 @@
 #include "Virologist.hpp"
+#include <iostream>
 
 
 namespace pandemic
 {
-    Virologist::Virologist(Board board,City city)
-    {
+     Virologist::Virologist(pandemic::Board& board , pandemic::City city):Player(board , city){
         
     }
 }
