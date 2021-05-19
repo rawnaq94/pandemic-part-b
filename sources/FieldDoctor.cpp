@@ -1,10 +1,11 @@
+#include <iostream>
 #include "FieldDoctor.hpp"
 
 
 namespace pandemic
 {
-    FieldDoctor::FieldDoctor(Board board, City city)
-    {
+   FieldDoctor::FieldDoctor(pandemic::Board& board , pandemic::City city):Player(board , city)
+   {
 
     }
     
