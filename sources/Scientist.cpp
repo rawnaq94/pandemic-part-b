@@ -3,7 +3,7 @@
 
 namespace pandemic
 {
-     Scientist::Scientist(pandemic::Board& board , pandemic::City city , int k):Player(board , city),n(k){
+     Scientist::Scientist(pandemic::Board& board , pandemic::City city , int k):Player(board , city),_ad(k){
 
     }
     
