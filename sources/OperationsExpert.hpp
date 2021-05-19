@@ -1,5 +1,5 @@
-#include "Board.hpp"
-#include "City.hpp"
+#pragma once
+#include <iostream>
 #include "Player.hpp"
 
 
@@ -9,8 +9,22 @@ namespace pandemic
     {
     
         public:
-            OperationsExpert(Board board,City city);
+           OperationsExpert(pandemic::Board& board , pandemic::City city);
+            Player& build()
+            {
+                if(board.node(city).getResearch_station())
+                {
+                        return *this;
+                }
+                
+                board.node(city).getResearch_station() = true;
+                return *this;
+        }
+        std::string role()
+        {
+                return "OperationsExpert";
+        }
 
 
-    };
+};
 }
