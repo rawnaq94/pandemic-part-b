@@ -13,8 +13,8 @@ namespace pandemic
     
     bool NodeCity::is_nib(pandemic::City city)
     {
-        std::list<pandemic::City>::iterator temp=nib_city.begin();
-        while (temp!=nib_city.end())
+        std::list<pandemic::City>::iterator temp=city1.begin();
+        while (temp!=city1.end())
         {
             if(*temp ==  city)
             {
